@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="WebRTC code samples">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+  <meta itemprop="description" content="Client-side WebRTC code samples">
+  <meta itemprop="name" content="WebRTC code samples">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta id="theme-color" name="theme-color" content="#ffffff">
+
+  <base target="_blank">
+
+  <title>Transmit text</title>
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">  
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Tornado WebRTC Example</title>
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/webrtc-adapter.js"></script>
+  <script src="/js/main.js"></script>
+
+
+    
+
+</head>
+
+<body>
+
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+
+     <div class="col-md-2">      
+       <div class="videos">
+        <video id="remote" autoplay></video>
+        <video id="local" autoplay muted></video>
+      </div>
+    </div>
+
+
+    <div class="col-md-8">
+    
+      <textarea class="form-control" rows="40" id ="code"></textarea>
+   
+       <div class="pull-right">
+          <button type="button" class="btn btn-primary btn-lg">change</button>
+          <button type="button" class="btn btn-success btn-lg" id="compile">compile</button>
+       </div>
+    </div>
+
+    <!-- right Line -->
+    <div class="col-md-2">
+    
+        <textarea disabled class="form-control" rows="15" id ="compile_result"></textarea>
+
+
+        <textarea disabled class ="form-control" id = "chat-area" rows="15"></textarea>
+          <form class="form-inline">
+              <div class="form-group">
+                 <input class="form-control" id="dataChannelSend" placeholder="보낼말">
+               </div>
+               <button type="button" id = "sendButton" class="btn btn-default">전송</button>
+           </form>
+
+
+
+  
+     
+      
+    </div>
+    <!-- right Line end -->
+  </div>
+</div>
+
+
+</body>
+</html>
